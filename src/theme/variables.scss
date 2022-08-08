@@ -1,27 +1,29 @@
-// Ionic Variables and Theming. For more info, please see:
+// Ionic Variables and Theming. fr more info, please see:
 // http://ionicframework.com/docs/theming/
 
 /** Ionic CSS Variables **/
 :root {
+ 
   /** primary **/
-  --ion-color-primary: #3880ff;
-  --ion-color-primary-rgb: 56, 128, 255;
+  --ion-color-primary: #196978;
+  --ion-color-primary-rgb: 25, 105, 120;
   --ion-color-primary-contrast: #ffffff;
   --ion-color-primary-contrast-rgb: 255, 255, 255;
-  --ion-color-primary-shade: #3171e0;
-  --ion-color-primary-tint: #4c8dff;
+  --ion-color-primary-shade: #1D5c68;
+  --ion-color-primary-tint: #12424b;
+
 
   /** secondary **/
-  --ion-color-secondary: #3dc2ff;
-  --ion-color-secondary-rgb: 61, 194, 255;
+  --ion-color-secondary: #FABE46;
+  --ion-color-secondary-rgb: 250, 190, 70;
   --ion-color-secondary-contrast: #ffffff;
   --ion-color-secondary-contrast-rgb: 255, 255, 255;
-  --ion-color-secondary-shade: #36abe0;
+  --ion-color-secondary-shade: #29CEEE;
   --ion-color-secondary-tint: #50c8ff;
 
   /** tertiary **/
-  --ion-color-tertiary: #5260ff;
-  --ion-color-tertiary-rgb: 82, 96, 255;
+  --ion-color-tertiary: #0C032E;
+  --ion-color-tertiary-rgb: 12, 3, 46;
   --ion-color-tertiary-contrast: #ffffff;
   --ion-color-tertiary-contrast-rgb: 255, 255, 255;
   --ion-color-tertiary-shade: #4854e0;
@@ -145,15 +147,20 @@
     --ion-color-light-contrast-rgb: 255,255,255;
     --ion-color-light-shade: #1e2023;
     --ion-color-light-tint: #383a3e;
+    --ion-color-blumine: rgb(25,105,120,1);
   }
-
+  .working {
+    --blumine-rgb: 25, 105, 226;
+  
+    /* rgb(25,105,120,1); */
+    color: rgba(var(--blumine-rgb), 0.5); /* WORKS! */
+  }
   /*
    * iOS Dark Theme
    * -------------------------------------------
    */
 
   .ios body {
-    --ion-background-color: #000000;
     --ion-background-color-rgb: 0,0,0;
 
     --ion-text-color: #ffffff;
@@ -182,6 +189,7 @@
     --ion-item-background: #000000;
 
     --ion-card-background: #1c1c1d;
+    --ion-font-family: "Montserrat", sans-serif;
   }
 
   .ios ion-modal {
